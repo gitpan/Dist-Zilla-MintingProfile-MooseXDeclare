@@ -1,0 +1,14 @@
+LICENSE
+MANIFEST
+META.yml
+Makefile.PL
+README
+dist.ini
+lib/Dist/Zilla/MintingProfile/MooseXDeclare.pm
+profiles/App/Module.pm
+profiles/App/plugins.ini
+profiles/App/profile.ini
+profiles/App/skel/bin/app
+profiles/default/Module.pm
+profiles/default/plugins.ini
+profiles/default/profile.ini
