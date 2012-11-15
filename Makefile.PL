@@ -12,7 +12,7 @@ install_share module => "Dist::Zilla::MintingProfile::MooseXDeclare", "profiles"
 
 my %WriteMakefileArgs = (
   "ABSTRACT" => "A minting profile for Modules written with MooseX::Declare",
-  "AUTHOR" => "Daniel Bruder <daniel.bruder\@gmail.com>",
+  "AUTHOR" => "Daniel B <dbr\@cpan.org>",
   "BUILD_REQUIRES" => {},
   "CONFIGURE_REQUIRES" => {
     "ExtUtils::MakeMaker" => "6.30",
@@ -23,7 +23,7 @@ my %WriteMakefileArgs = (
   "LICENSE" => "perl",
   "NAME" => "Dist::Zilla::MintingProfile::MooseXDeclare",
   "PREREQ_PM" => {},
-  "VERSION" => "0.100",
+  "VERSION" => "0.101",
   "test" => {
     "TESTS" => ""
   }

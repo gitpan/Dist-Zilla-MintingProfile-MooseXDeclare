@@ -1,16 +1,16 @@
 ---
 abstract: 'A minting profile for Modules written with MooseX::Declare'
 author:
-  - 'Daniel Bruder <daniel.bruder@gmail.com>'
+  - 'Daniel B <dbr@cpan.org>'
 build_requires: {}
 configure_requires:
   ExtUtils::MakeMaker: 6.30
   File::ShareDir::Install: 0.03
 dynamic_config: 0
-generated_by: 'Dist::Zilla version 4.300017, CPAN::Meta::Converter version 2.120921'
+generated_by: 'Dist::Zilla version 4.300020, CPAN::Meta::Converter version 2.120921'
 license: perl
 meta-spec:
   url: http://module-build.sourceforge.net/META-spec-v1.4.html
   version: 1.4
 name: Dist-Zilla-MintingProfile-MooseXDeclare
-version: 0.100
+version: 0.101
