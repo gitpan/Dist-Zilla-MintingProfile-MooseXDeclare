@@ -1,5 +1,8 @@
 #!/usr/bin/env perl
 
+#  PODNAME: app
+# ABSTRACT: Executable to {{$name}}
+
 use v5.14;
 use strict;
 use warnings;

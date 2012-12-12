@@ -13,19 +13,36 @@ install_share module => "Dist::Zilla::MintingProfile::MooseXDeclare", "profiles"
 my %WriteMakefileArgs = (
   "ABSTRACT" => "A minting profile for Modules written with MooseX::Declare",
   "AUTHOR" => "Daniel B <dbr\@cpan.org>",
-  "BUILD_REQUIRES" => {},
+  "BUILD_REQUIRES" => {
+    "Carp" => 0,
+    "ExtUtils::MakeMaker" => 0,
+    "File::Spec::Functions" => 0,
+    "List::Util" => 0,
+    "Module::Build" => "0.3601",
+    "Scalar::Util" => 0,
+    "Test::CheckDeps" => "0.002",
+    "Test::More" => "0.94",
+    "Test::UseAllModules" => 0,
+    "strict" => 0,
+    "warnings" => 0
+  },
   "CONFIGURE_REQUIRES" => {
     "ExtUtils::MakeMaker" => "6.30",
-    "File::ShareDir::Install" => "0.03"
+    "File::ShareDir::Install" => "0.03",
+    "Module::Build" => "0.3601"
   },
   "DISTNAME" => "Dist-Zilla-MintingProfile-MooseXDeclare",
   "EXE_FILES" => [],
   "LICENSE" => "perl",
   "NAME" => "Dist::Zilla::MintingProfile::MooseXDeclare",
-  "PREREQ_PM" => {},
-  "VERSION" => "0.101",
+  "PREREQ_PM" => {
+    "Dist::Zilla::Role::MintingProfile::ShareDir" => 0,
+    "Moose" => 0,
+    "namespace::autoclean" => 0
+  },
+  "VERSION" => "0.140",
   "test" => {
-    "TESTS" => ""
+    "TESTS" => "t/*.t"
   }
 );
 
