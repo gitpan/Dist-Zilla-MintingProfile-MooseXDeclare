@@ -3,7 +3,7 @@ BEGIN {
   $Dist::Zilla::MintingProfile::MooseXDeclare::AUTHORITY = 'cpan:DBR';
 }
 {
-  $Dist::Zilla::MintingProfile::MooseXDeclare::VERSION = '0.140';
+  $Dist::Zilla::MintingProfile::MooseXDeclare::VERSION = '0.200';
 }
 
 # ABSTRACT: A minting profile for Modules written with MooseX::Declare
@@ -11,13 +11,14 @@ BEGIN {
 use Moose;
 use namespace::autoclean;
 with 'Dist::Zilla::Role::MintingProfile::ShareDir';
- 
+
 __PACKAGE__->meta->make_immutable;
 
 
 1;
 
 __END__
+
 =pod
 
 =encoding utf8
@@ -28,7 +29,7 @@ Dist::Zilla::MintingProfile::MooseXDeclare - A minting profile for Modules writt
 
 =head1 VERSION
 
-version 0.140
+version 0.200
 
 =head1 SYNOPSIS
 
@@ -68,4 +69,3 @@ This is free software; you can redistribute it and/or modify it under
 the same terms as the Perl 5 programming language system itself.
 
 =cut
-

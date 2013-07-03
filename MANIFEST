@@ -13,7 +13,7 @@ profiles/App/plugins.ini
 profiles/App/profile.ini
 profiles/App/skel/bin/app
 profiles/App/skel/etc/log.conf
-profiles/App/weaver.ini
+profiles/App/skel/weaver.ini
 profiles/default/Module.pm
 profiles/default/plugins.ini
 profiles/default/profile.ini

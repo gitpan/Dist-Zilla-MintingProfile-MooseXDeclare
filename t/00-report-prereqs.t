@@ -3,21 +3,15 @@
 use strict;
 use warnings;
 
-use Test::More;
+use Test::More tests => 1;
 
 use ExtUtils::MakeMaker;
 use File::Spec::Functions;
 use List::Util qw/max/;
 
-if ( $ENV{AUTOMATED_TESTING} ) {
-  plan tests => 1;
-}
-else {
-  plan skip_all => '$ENV{AUTOMATED_TESTING} not set';
-}
-
 my @modules = qw(
   Carp
+  Dist::Zilla::PluginBundle::Author::DBR
   Dist::Zilla::Role::MintingProfile::ShareDir
   ExtUtils::MakeMaker
   File::ShareDir::Install
@@ -25,11 +19,10 @@ my @modules = qw(
   List::Util
   Module::Build
   Moose
+  Pod::Weaver::Plugin::Encoding
   Scalar::Util
-  Test::CPAN::Meta
   Test::CheckDeps
   Test::More
-  Test::Pod
   Test::UseAllModules
   namespace::autoclean
   perl
@@ -43,6 +36,7 @@ my $cpan_meta = "CPAN::Meta";
 if ( -f "MYMETA.json" && eval "require $cpan_meta" ) { ## no critic
   if ( my $meta = eval { CPAN::Meta->load_file("MYMETA.json") } ) {
     my $prereqs = $meta->prereqs;
+    delete $prereqs->{develop};
     my %uniq = map {$_ => 1} map { keys %$_ } map { values %$_ } values %$prereqs;
     $uniq{$_} = 1 for @modules; # don't lose any static ones
     @modules = sort keys %uniq;
@@ -66,7 +60,7 @@ for my $mod ( @modules ) {
     push @reports, ["missing", $mod];
   }
 }
-    
+
 if ( @reports ) {
   my $vl = max map { length $_->[0] } @reports;
   my $ml = max map { length $_->[1] } @reports;
