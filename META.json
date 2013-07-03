@@ -59,7 +59,7 @@
    "provides" : {},
    "release_status" : "stable",
    "resources" : {},
-   "version" : "0.300",
+   "version" : "0.350",
    "x_authority" : "cpan:DBR"
 }
 

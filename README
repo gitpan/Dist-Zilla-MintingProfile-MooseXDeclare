@@ -3,7 +3,7 @@ NAME
     Modules written with MooseX::Declare
 
 VERSION
-    version 0.300
+    version 0.350
 
 SYNOPSIS
          dzil new -P MooseXDeclare -p App New::App

@@ -3,7 +3,7 @@ BEGIN {
   $Dist::Zilla::MintingProfile::MooseXDeclare::AUTHORITY = 'cpan:DBR';
 }
 {
-  $Dist::Zilla::MintingProfile::MooseXDeclare::VERSION = '0.300';
+  $Dist::Zilla::MintingProfile::MooseXDeclare::VERSION = '0.350';
 }
 
 # ABSTRACT: A minting profile for Modules written with MooseX::Declare
@@ -29,7 +29,7 @@ Dist::Zilla::MintingProfile::MooseXDeclare - A minting profile for Modules writt
 
 =head1 VERSION
 
-version 0.300
+version 0.350
 
 =head1 SYNOPSIS
 

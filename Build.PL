@@ -18,7 +18,7 @@ my %module_build_args = (
     "Daniel B <dbr\@cpan.org>"
   ],
   "dist_name" => "Dist-Zilla-MintingProfile-MooseXDeclare",
-  "dist_version" => "0.300",
+  "dist_version" => "0.350",
   "license" => "perl",
   "module_name" => "Dist::Zilla::MintingProfile::MooseXDeclare",
   "recommends" => {},
