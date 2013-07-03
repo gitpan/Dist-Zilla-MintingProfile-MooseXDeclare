@@ -3,7 +3,7 @@ NAME
     Modules written with MooseX::Declare
 
 VERSION
-    version 0.200
+    version 0.300
 
 SYNOPSIS
          dzil new -P MooseXDeclare -p App New::App
@@ -34,7 +34,7 @@ AUTHOR
     Daniel B <dbr@cpan.org>
 
 COPYRIGHT AND LICENSE
-    This software is copyright (c) 2012 by Daniel B.
+    This software is copyright (c) 2013 by Daniel B.
 
     This is free software; you can redistribute it and/or modify it under
     the same terms as the Perl 5 programming language system itself.

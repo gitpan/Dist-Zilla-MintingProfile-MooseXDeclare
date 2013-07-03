@@ -17,7 +17,6 @@ build_requires:
   warnings: 0
 configure_requires:
   ExtUtils::MakeMaker: 6.30
-  File::ShareDir::Install: 0.03
   Module::Build: 0.3601
 dynamic_config: 0
 generated_by: 'Dist::Zilla version 4.300035, CPAN::Meta::Converter version 2.120921'
@@ -26,15 +25,11 @@ meta-spec:
   url: http://module-build.sourceforge.net/META-spec-v1.4.html
   version: 1.4
 name: Dist-Zilla-MintingProfile-MooseXDeclare
-provides:
-  Dist::Zilla::MintingProfile::MooseXDeclare:
-    file: lib/Dist/Zilla/MintingProfile/MooseXDeclare.pm
-    version: 0.200
+provides: {}
 requires:
-  Dist::Zilla::PluginBundle::Author::DBR: 0
   Dist::Zilla::Role::MintingProfile::ShareDir: 0
   Moose: 0
-  Pod::Weaver::Plugin::Encoding: 0
   namespace::autoclean: 0
-version: 0.200
+resources: {}
+version: 0.300
 x_authority: cpan:DBR

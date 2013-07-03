@@ -11,15 +11,12 @@ use List::Util qw/max/;
 
 my @modules = qw(
   Carp
-  Dist::Zilla::PluginBundle::Author::DBR
   Dist::Zilla::Role::MintingProfile::ShareDir
   ExtUtils::MakeMaker
-  File::ShareDir::Install
   File::Spec::Functions
   List::Util
   Module::Build
   Moose
-  Pod::Weaver::Plugin::Encoding
   Scalar::Util
   Test::CheckDeps
   Test::More

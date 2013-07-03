@@ -3,7 +3,7 @@ BEGIN {
   $Dist::Zilla::MintingProfile::MooseXDeclare::AUTHORITY = 'cpan:DBR';
 }
 {
-  $Dist::Zilla::MintingProfile::MooseXDeclare::VERSION = '0.200';
+  $Dist::Zilla::MintingProfile::MooseXDeclare::VERSION = '0.300';
 }
 
 # ABSTRACT: A minting profile for Modules written with MooseX::Declare
@@ -29,7 +29,7 @@ Dist::Zilla::MintingProfile::MooseXDeclare - A minting profile for Modules writt
 
 =head1 VERSION
 
-version 0.200
+version 0.300
 
 =head1 SYNOPSIS
 
@@ -63,7 +63,7 @@ Daniel B <dbr@cpan.org>
 
 =head1 COPYRIGHT AND LICENSE
 
-This software is copyright (c) 2012 by Daniel B.
+This software is copyright (c) 2013 by Daniel B.
 
 This is free software; you can redistribute it and/or modify it under
 the same terms as the Perl 5 programming language system itself.

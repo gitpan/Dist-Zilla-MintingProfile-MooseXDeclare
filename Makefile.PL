@@ -6,8 +6,6 @@ use warnings;
 
 use ExtUtils::MakeMaker 6.30;
 
-use File::ShareDir::Install;
-install_share module => "Dist::Zilla::MintingProfile::MooseXDeclare", "profiles";
 
 
 my %WriteMakefileArgs = (
@@ -18,7 +16,6 @@ my %WriteMakefileArgs = (
   },
   "CONFIGURE_REQUIRES" => {
     "ExtUtils::MakeMaker" => "6.30",
-    "File::ShareDir::Install" => "0.03",
     "Module::Build" => "0.3601"
   },
   "DISTNAME" => "Dist-Zilla-MintingProfile-MooseXDeclare",
@@ -26,10 +23,8 @@ my %WriteMakefileArgs = (
   "LICENSE" => "perl",
   "NAME" => "Dist::Zilla::MintingProfile::MooseXDeclare",
   "PREREQ_PM" => {
-    "Dist::Zilla::PluginBundle::Author::DBR" => 0,
     "Dist::Zilla::Role::MintingProfile::ShareDir" => 0,
     "Moose" => 0,
-    "Pod::Weaver::Plugin::Encoding" => 0,
     "namespace::autoclean" => 0
   },
   "TEST_REQUIRES" => {
@@ -44,7 +39,7 @@ my %WriteMakefileArgs = (
     "strict" => 0,
     "warnings" => 0
   },
-  "VERSION" => "0.200",
+  "VERSION" => "0.300",
   "test" => {
     "TESTS" => "t/*.t"
   }
@@ -82,10 +77,5 @@ delete $WriteMakefileArgs{CONFIGURE_REQUIRES}
 
 WriteMakefile(%WriteMakefileArgs);
 
-{
-package
-MY;
-use File::ShareDir::Install qw(postamble);
-}
 
 

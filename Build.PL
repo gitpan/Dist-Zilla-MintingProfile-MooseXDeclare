@@ -11,7 +11,6 @@ my %module_build_args = (
   },
   "configure_requires" => {
     "ExtUtils::MakeMaker" => "6.30",
-    "File::ShareDir::Install" => "0.03",
     "Module::Build" => "0.3601"
   },
   "dist_abstract" => "A minting profile for Modules written with MooseX::Declare",
@@ -19,24 +18,17 @@ my %module_build_args = (
     "Daniel B <dbr\@cpan.org>"
   ],
   "dist_name" => "Dist-Zilla-MintingProfile-MooseXDeclare",
-  "dist_version" => "0.200",
+  "dist_version" => "0.300",
   "license" => "perl",
   "module_name" => "Dist::Zilla::MintingProfile::MooseXDeclare",
   "recommends" => {},
   "recursive_test_files" => 1,
   "requires" => {
-    "Dist::Zilla::PluginBundle::Author::DBR" => 0,
     "Dist::Zilla::Role::MintingProfile::ShareDir" => 0,
     "Moose" => 0,
-    "Pod::Weaver::Plugin::Encoding" => 0,
     "namespace::autoclean" => 0
   },
   "script_files" => [],
-  "share_dir" => {
-    "module" => {
-      "Dist::Zilla::MintingProfile::MooseXDeclare" => "profiles"
-    }
-  },
   "test_requires" => {
     "Carp" => 0,
     "ExtUtils::MakeMaker" => 0,
